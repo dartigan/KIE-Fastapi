@@ -128,8 +128,8 @@ async def model_pred(file : UploadFile):
     annotated_image, layout_predicted = detect_anno_areas_lp(image)
     print("ANNOTATED IMAGE !!")
     #close
-    cv2.imshow("Annotated_img", annotated_image)
-    cv2.waitKey(0)
+    # cv2.imshow("Annotated_img", annotated_image)
+    # cv2.waitKey(0)
 
     _, encoded_img = cv2.imencode('.PNG' , annotated_image)
     print("ENCODING ANNOTATED IMAGE")
